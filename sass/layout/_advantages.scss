@@ -1,0 +1,12 @@
+.advantages {
+  &__list {
+    display: flex;
+    margin: 0 -15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 270px;
+    margin: 0 15px;
+  }
+}

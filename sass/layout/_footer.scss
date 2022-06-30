@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--additional-color);
+  padding: 60px 0;
+  &__social {
+    margin-left: 70px;
+  }
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+    margin-top: 20px;
+  }
+  &__link {
+    color: var(--opacity-link-color);
+    display: block;
+    margin-top: 9px;
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+  &__title{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__mail{
+    margin-left: 93px
+  }
+}

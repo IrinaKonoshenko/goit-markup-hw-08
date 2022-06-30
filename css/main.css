@@ -1,0 +1,74 @@
+:root {
+  --accent-color: #2196f3;
+  --white-color: #fff;
+  --white-100-color: #f5f4fa;
+  --black-color: #000;
+  --opacity-link-color: rgba(255, 255, 255, 0.6);
+  --gray-color: #757575;
+  --base-color: #212121;
+  --additional-color: #2f303a;
+  --button-hover: #188ce8;
+  --header-border: #ececec;
+  --project-border-color: #eeeeee;
+  --icon-color: #afb1b8;
+  --base-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: var(--primary-font-family);
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base-font);
+  color: var(--base-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__navigation {
+  margin-left: 93px;
+}/*# sourceMappingURL=main.css.map */
