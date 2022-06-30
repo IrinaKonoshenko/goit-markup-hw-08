@@ -1,5 +1,23 @@
-.container {
-  margin: 0 auto;
-  width: 1200px;
+.container{
+  width: 100%;
   padding: 0 15px;
+}
+
+@media screen and (min-width: $media-mobile){
+  .container{
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $media-tablet) {
+  .container{
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: $media-descktop) {
+  .container{
+    width: 1200px;
+  }
 }
