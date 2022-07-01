@@ -17,18 +17,6 @@
     }
   }
 }
-.mobile-menu {
-  &-button{
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-    &__icon {
-      fill: var(--black-color);
-    }
-  }
-}
-
 .header__container{
   display: flex;
   align-items: center;
