@@ -5,31 +5,34 @@
   &__navigation {
     display: none;
   }
+  &__container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $media-tablet) {
   .header {
+    border-bottom: 1px solid var(--header-border);
+    &__container{
+      height: auto;
+    }
     &__contact {
-      display: block;
+      display: flex;
     }
     &__navigation {
       display: block;
+      margin-left: 88px;
     }
   }
 }
-.header__container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-// .header {
-//   border-bottom: 1px solid var(--header-border);
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
-//   &__navigation {
-//     margin-left: 93px;
-//   }
-// }
+
+@media screen and (min-width: $media-descktop) {
+  .header{
+    &__navigation {
+      margin-left: 93px;
+    }
+  }
+}
