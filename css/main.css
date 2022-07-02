@@ -35,6 +35,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -240,6 +242,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  max-width: 528px;
 }
 .modal__close {
   position: absolute;
@@ -268,7 +271,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    width: auto;
   }
 }
 .tabs {
@@ -451,20 +454,20 @@ body {
   color: var(--gray-color);
   position: relative;
   user-select: none;
-  display: flex;
 }
 .checkbox__label::before {
   content: "";
   width: 16px;
   height: 15px;
   cursor: pointer;
-  display: block;
-  margin-right: 8px;
+  display: inline-block;
+  margin-right: 7px;
   border: 2px solid var(--base-color);
   border-radius: 2px;
   box-sizing: border-box;
   outline: var(--accent-color);
-  margin-top: -1px;
+  position: relative;
+  top: 1px;
 }
 .checkbox__input {
   position: absolute;
@@ -610,6 +613,7 @@ body {
     pointer-events: none;
     transition: opacity 500ms linear, visibility 500ms linear;
     background-color: var(--white-color);
+    z-index: 4;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -873,12 +877,19 @@ body {
 }
 .hero {
   background: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  background-position: center;
   margin: 0 auto;
+  max-width: 480px;
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero@2x.jpg");
+  }
 }
 .hero__text {
   font-weight: 900;
@@ -915,16 +926,34 @@ body {
     width: 360px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/hero@1x.jpg");
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/hero@2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero@1x.jpg");
   }
   .hero__text {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero@2x.jpg");
   }
 }
 .pages {

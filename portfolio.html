@@ -37,7 +37,7 @@
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current link" href="./portfolio.html"
+              <a class="navigation__link navigation__link--current  link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -72,8 +72,6 @@
             >
           </li>
         </ul>
-      </div>
-      <div class="mobile-menu" data-menu>
         <button
           type="button"
           class="mobile-menu__btn mobile-menu__btn--open"
@@ -83,6 +81,10 @@
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
+      </div>
+    </header>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
         <button
           type="button"
           class="mobile-menu__btn mobile-menu__btn--close"
@@ -92,59 +94,57 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="container mobile-menu__container">
-          <ul class="mobile-menu__page list">
-            <li class="mobile-menu__item">
+        <ul class="mobile-menu__page list">
+          <li class="mobile-menu__item">
+            <a
+              href="./index.html"
+              class="mobile-menu__link link"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__bottom">
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contact">
               <a
-                href="./index.html"
-                class="mobile-menu__link link"
-                >Студия</a
+                href="tel:+38-096-111-11-11"
+                class="mobile-menu__contact-link mobile-menu__phone link"
+                >+38 096 111 11 11</a
               >
             </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link"
-                >Портфолио</a
+            <li class="mobile-menu__contact">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-link link"
+                >info@devstudio.com</a
               >
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link link">Контакты</a>
             </li>
           </ul>
-          <div class="mobile-menu__bottom">
-            <ul class="mobile-menu__contacts list">
-              <li class="mobile-menu__contact">
-                <a
-                  href="tel:+38-096-111-11-11"
-                  class="mobile-menu__contact-link mobile-menu__phone link"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-menu__contact">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="mobile-menu__contact-link link"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-menu__social list">
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Instagram</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Twitter</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">Facebook</a>
-              </li>
-              <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__social-link link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="mobile-menu__social list">
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </div>
     <main>
       <section class="section">
         <div class="container">
@@ -171,12 +171,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project1.jpg"
-                    alt="project1"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_1@1x.webp 1x,
+                        images/desktop/project/project_1@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_1@1x.jpg 1x,
+                        images/desktop/project/project_1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_1@1x.webp 1x,
+                        images/tablet/project/project_1@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_1@1x.jpg 1x,
+                        images/tablet/project/project_1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_1@1x.webp 1x,
+                        images/mobile/project/project_1@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_1@1x.jpg 1x,
+                        images/mobile/project/project_1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_1@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -192,12 +240,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project2.jpg"
-                    alt="project2"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_2@1x.webp 1x,
+                        images/desktop/project/project_2@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_2@1x.jpg 1x,
+                        images/desktop/project/project_2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_2@1x.webp 1x,
+                        images/tablet/project/project_2@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_2@1x.jpg 1x,
+                        images/tablet/project/project_2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_2@1x.webp 1x,
+                        images/mobile/project/project_2@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_2@1x.jpg 1x,
+                        images/mobile/project/project_2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_2@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -215,12 +311,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project3.jpg"
-                    alt="project3"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_3@1x.webp 1x,
+                        images/desktop/project/project_3@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_3@1x.jpg 1x,
+                        images/desktop/project/project_3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_3@1x.webp 1x,
+                        images/tablet/project/project_3@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_3@1x.jpg 1x,
+                        images/tablet/project/project_3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_3@1x.webp 1x,
+                        images/mobile/project/project_3@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_3@1x.jpg 1x,
+                        images/mobile/project/project_3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_3@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -236,12 +380,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project4.jpg"
-                    alt="project4"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_4@1x.webp 1x,
+                        images/desktop/project/project_4@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_4@1x.jpg 1x,
+                        images/desktop/project/project_4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_4@1x.webp 1x,
+                        images/tablet/project/project_4@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_4@1x.jpg 1x,
+                        images/tablet/project/project_4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_4@1x.webp 1x,
+                        images/mobile/project/project_4@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_4@1x.jpg 1x,
+                        images/mobile/project/project_4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_4@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -258,12 +450,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project5.jpg"
-                    alt="project5"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_5@1x.webp 1x,
+                        images/desktop/project/project_5@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_5@1x.jpg 1x,
+                        images/desktop/project/project_5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_5@1x.webp 1x,
+                        images/tablet/project/project_5@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_5@1x.jpg 1x,
+                        images/tablet/project/project_5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_5@1x.webp 1x,
+                        images/mobile/project/project_5@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_5@1x.jpg 1x,
+                        images/mobile/project/project_5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_5@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -279,12 +519,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project6.jpg"
-                    alt="project6"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_6@1x.webp 1x,
+                        images/desktop/project/project_6@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_6@1x.jpg 1x,
+                        images/desktop/project/project_6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_6@1x.webp 1x,
+                        images/tablet/project/project_6@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_6@1x.jpg 1x,
+                        images/tablet/project/project_6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_6@1x.webp 1x,
+                        images/mobile/project/project_6@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_6@1x.jpg 1x,
+                        images/mobile/project/project_6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_6@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -300,12 +588,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project7.jpg"
-                    alt="project7"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_7@1x.webp 1x,
+                        images/desktop/project/project_7@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_7@1x.jpg 1x,
+                        images/desktop/project/project_7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_7@1x.webp 1x,
+                        images/tablet/project/project_7@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_7@1x.jpg 1x,
+                        images/tablet/project/project_7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_7@1x.webp 1x,
+                        images/mobile/project/project_7@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_7@1x.jpg 1x,
+                        images/mobile/project/project_7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_7@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -321,12 +657,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project8.jpg"
-                    alt="project8"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_8@1x.webp 1x,
+                        images/desktop/project/project_8@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_8@1x.jpg 1x,
+                        images/desktop/project/project_8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_8@1x.webp 1x,
+                        images/tablet/project/project_8@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_8@1x.jpg 1x,
+                        images/tablet/project/project_8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_8@1x.webp 1x,
+                        images/mobile/project/project_8@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_8@1x.jpg 1x,
+                        images/mobile/project/project_8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_8@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -342,12 +726,60 @@
             <li class="project__item">
               <a href="/" target="_blank" class="project__link link">
                 <div class="project__box">
-                  <img
-                    src="images/project9.jpg"
-                    alt="project9"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/project/project_9@1x.webp 1x,
+                        images/desktop/project/project_9@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/desktop/project/project_9@1x.jpg 1x,
+                        images/desktop/project/project_9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_9@1x.webp 1x,
+                        images/tablet/project/project_9@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/project/project_9@1x.jpg 1x,
+                        images/tablet/project/project_9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_9@1x.webp 1x,
+                        images/mobile/project/project_9@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/project/project_9@1x.jpg 1x,
+                        images/mobile/project/project_9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="images/desktop/project/project_9@1x.jpg"
+                      alt="team"
+                    />
+                  </picture>
                   <p class="project__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

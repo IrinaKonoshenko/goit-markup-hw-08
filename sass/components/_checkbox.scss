@@ -8,19 +8,19 @@
     color: var(--gray-color);
     position: relative;
     user-select: none;
-    display: flex;
     &::before {
       content: "";
       width: 16px;
       height: 15px;
       cursor: pointer;
-      display: block;
-      margin-right: 8px;
+      display: inline-block;
+      margin-right: 7px;
       border: 2px solid var(--base-color);
       border-radius: 2px;
       box-sizing: border-box;
       outline: var(--accent-color);
-      margin-top: -1px;
+      position: relative;
+      top: 1px;
     }
   }
   &__input {

@@ -10,6 +10,7 @@
     pointer-events: none;
     transition: opacity 500ms linear, visibility 500ms linear;
     background-color: var(--white-color);
+    z-index: 4;
     &.is-open {
       opacity: 1;
       visibility: visible;
