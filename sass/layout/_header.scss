@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid var(--header-border);
   &__contact {
     display: none;
   }
@@ -9,14 +10,14 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
-
 @media screen and (min-width: $media-tablet) {
   .header {
-    border-bottom: 1px solid var(--header-border);
     &__container{
       height: auto;
+      justify-content: stretch;
     }
     &__contact {
       display: flex;

@@ -1,13 +1,15 @@
-.advantages-item {
-  &__text {
+.advantages-item{
+  &__text{
+    letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: var(--base-color);
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    text-align: center;
   }
-  &__description {
+  &__description{
     font-size: 14px;
     line-height: 1.71;
     color: var(--gray-color);
@@ -22,3 +24,14 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: $media-tablet) {
+  .advantages-item{
+    &__text{
+      text-align: left;
+    }
+  }
+}
+
+
+

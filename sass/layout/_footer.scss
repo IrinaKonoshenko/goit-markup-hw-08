@@ -1,12 +1,15 @@
 .footer {
   background-color: var(--additional-color);
   padding: 60px 0;
-  &__social {
-    margin-left: 70px;
-  }
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__address {
     font-style: normal;
@@ -14,6 +17,7 @@
     line-height: 1.71;
     color: var(--white-color);
     margin-top: 20px;
+    text-align: center;
   }
   &__link {
     color: var(--opacity-link-color);
@@ -23,16 +27,69 @@
       color: var(--white-color);
     }
   }
-  &__title{
+  &__social,
+  &__mail {
+    margin-top: 60px;
+  }
+  &__title {
     color: var(--white-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
   }
   &__mail{
-    margin-left: 93px
+    width: 100%;
+  }
+}
+@media screen and (min-width: $media-tablet) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &__mail {
+      width: 450px;
+    }
+    &__contacts,
+    &__social {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+    }
+    &__social {
+      margin-top: 0;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: $media-descktop) {
+  .footer {
+    &__social {
+      margin-left: 70px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: row;
+    }
+    &__mail {
+      margin-left: 93px;
+      margin-top: 0;
+    }
+    &__contacts,
+    &__social{
+      display: block;
+      width: auto;
+    }
+    &__address,
+    &__title{
+      text-align: left;
+    }
   }
 }

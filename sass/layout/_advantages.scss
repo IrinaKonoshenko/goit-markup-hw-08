@@ -1,20 +1,37 @@
 .advantages{
-  &__list{
-    
+  &__item{    
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
   }
 }
 
-
-
-// .advantages {
-//   &__list {
-//     display: flex;
-//     margin: 0 -15px;
-//     justify-content: flex-start;
-//     flex-wrap: wrap;
-//   }
-//   &__item {
-//     width: 270px;
-//     margin: 0 15px;
-//   }
-// }
+@media screen and (min-width: $media-tablet) {
+  .advantages{
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    &__item{
+      margin-bottom: 30px;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: calc(100% / 2 - 30px);
+      &:last-child,
+      &:nth-last-child(2){
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: $media-descktop) {
+  .advantages{
+    &__list{
+      justify-content: flex-start;
+    }
+    &__item{
+      width: calc(100% / 4 - 30px);
+    }
+  }
+}

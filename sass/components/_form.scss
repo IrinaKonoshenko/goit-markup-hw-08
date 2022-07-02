@@ -2,11 +2,14 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px; //////////
+    line-height: 1.15; 
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--base-color);
     margin-bottom: 12px;
+  }
+  &__checkbox{
+    margin-top: 20px;
   }
   &__field {
     margin-bottom: 10px;
