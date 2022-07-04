@@ -1125,10 +1125,12 @@ body {
   .footer__container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
   }
   .footer__mail {
     margin-left: 93px;
     margin-top: 0;
+    width: auto;
   }
   .footer__contacts, .footer__social {
     display: block;
